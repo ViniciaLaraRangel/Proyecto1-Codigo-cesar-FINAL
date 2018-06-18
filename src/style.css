@@ -1,0 +1,30 @@
+body {
+    background-image: url("https://www.iebschool.com/blog/wp-content/uploads/2016/06/educaci%C3%B3n-creatividad.png");    
+    background-size: 89%;
+    background-repeat: right-top;
+}
+
+header {
+    height: 10px;
+    background-color: green; 
+    font-family: Impact;
+    color: greenyellow;
+    padding-bottom: 60px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h6 {
+    width: 450px;
+    text-align: center;
+    color: green;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+form {
+    text-align: center;
+    height: 220px;
+}

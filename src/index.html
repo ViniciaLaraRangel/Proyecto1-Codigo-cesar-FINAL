@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--Enlazar a CSS update 17/06: Se puede usar Framework!-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Reto Cypher Code</title>
+      <link rel="stylesheet" href="../css/bootstrap.min.css" media="screen">
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+<!--Agregar encabezado-->
+    <header>
+      <section class="container" id="encabezado">
+        <div class="row">
+          <div class=" col-xs-12 col-md-12"><h1>Ésta es tu invitación. ¡Felicidades por llegar aquí!</h1></div>  
+        </div>
+    </header>
+<!--Instrucciones, comentarios o bienvenida (UX)-->
+      <section class="container">
+        <div class="row">
+          <div class="col-xs-3 col-lg-7"><h6> ¡PRUEBAME! Introduce un mensaje en "Decodex", elije la llave secreta que le darás al receptor de tu mensaje, da ¡CLICK! en el botón  verde y... ¡Comienza el juego! </h6></div>
+          <div class="col-xs-3 col-lg-5"><h6>¿Ya tienes un código? ¡DESCIFRALO! Introduce el mensaje en "Encodex", da ¡CLICK! en el botón rojo... !NO OLVIDES LA LLAVE! Si no tienes una, suerte pára la próxima :) </h6></div>
+        </div>  
+<!--Agregar Input para introducir la palabra a codificar y el onclick para la funcion-->        
+        <div class="row">
+          <div class="col-xs-3 col-lg-2"></div>
+          <div class="col-xs-6 col-lg-8">
+            <form>
+                <input type="text" class="btn btn-lg btn-block" id="palabraIntroducida" placeholder="DECODEX">
+            </form>
+          </div>
+          <div class="col-xs-3 col-lg-2"></div>
+        </div>
+<!--Agregar Input del offset(key) con el que vamos a cifrar, con los botones de cifrar(izq) y descifrar (der)-->
+        <div class="row">
+<!--Botón para cifrar-->
+          <div class="col-xs-4 col-md-4">
+            <form>
+                <input type="button" class="btn btn-success btn-primary btn-lg" id="encripta" value="Cifrar" onclick="encriptarPalabra()">
+            </form>
+          </div>
+<!--Ofsset(key)-->
+          <div class="col-xs-4 col-md-4">
+            <form>
+                <input type="number" class="form-control btn btn-default" id="key" placeholder="¿QUÉ LLAVE DESEAS?">
+            </form>
+          </div>
+<!--Botón para descifrar-->
+          <div class="col-xs-4 col-md-4">
+            <form>
+                <input type="button" class="btn btn-danger btn-primary btn-lg" id="desencripta" value="Descifrar" onclick="desencriptarPalabra()">
+            </form>
+          </div>
+<!--Agregar Input para mostrar el resultado de encriptación-->        
+        <div class="row">
+          <div class="col-xs-3 col-md-1"></div>
+          <div class="col-xs-6 col-md-10">
+            <form>
+                <input type="text" class="btn btn-lg btn-block" id="resultado" placeholder="ENCODEX">
+            </form>
+          </div>  
+          <div class="col-xs-3 col-md-1"></div>  
+        </div> 
+<!--Enlace a JS y a CSS/framework--> 
+      <script type="text/javascript" src="index.js"> </script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </body>
+</html>
